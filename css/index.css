@@ -230,3 +230,87 @@ footer nav a {
     display: flex;
 }
 
+
+.about-top {
+    padding: 5%;
+    border-bottom: 1px dashed black;
+}
+
+.tile-container {
+    margin: 5% 0px;
+}
+
+.tiles {
+    padding: 5% 0px;
+    width: 45%;
+    height: 500px;
+    flex-direction: row nowrap;
+}
+
+.tiles h2 {
+    padding-top: 10px;
+}
+
+.tiles p {
+    padding: 5% 0px;
+}
+
+.strategy, .places {
+    flex-flow: column nowrap;
+    padding: 5% 0px;
+    float: left;
+}
+
+.how, .collab {
+    flex-flow: column nowrap;
+    padding: 5% 0px;
+    float: right;
+}
+
+.places, .collab {
+    border-bottom: 1px dashed black;
+    margin-bottom: 5%;
+}
+
+.strategy, .how {
+    border-bottom: 1px dashed black;
+}
+
+.btn {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5% 10%;
+    height: 50px;
+    justify-content: center;
+    align-self: flex-start;
+}
+
+.btn:hover {
+    color:white;
+    background:black;
+}
+
+.bottom-section {
+    margin: 5%;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+
+}
+
+/* STRETCH GOALS */
+
+.box {
+    animation: box-anim 1s linear infinite;
+    animation-play-state: paused;
+}
+
+.box:hover {
+    animation-play-state: running;
+}
+
+@keyframes box-anim{
+    50% {transform: translateY(10px);}
+    100% {transform: translateY(0px);}
+    
+}
