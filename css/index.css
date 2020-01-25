@@ -51,9 +51,14 @@ table {
     box-sizing: border-box;
 }
 
+/*CODE STARTS HERE*/
+/* STYLES FOR ALL PAGES */
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    width: 800px;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -65,6 +70,49 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+
+header nav {
+    width: 100%;
+    padding: 0px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+   
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.jumbo {
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+}
+
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HOME PAGE SPECIFIC */
 
 .container {
     width: 800px;
@@ -104,12 +152,62 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* * [ ] box1: `teal`
+* [ ] box2: `gold`
+* [ ] box3: `cadetblue`
+* [ ] box4: `coral`
+* [ ] box5: `crimson`
+* [ ] box6: `forestgreen`
+* [ ] box7: `darkorchid`
+* [ ] box8: `hotpink`
+* [ ] box9: `indigo`
+* [ ] box10: `dodgerblue` */
+
+.b1 {
+    background: teal;
+}
+
+.b2 {
+    background-color: gold;
+}
+
+.b3 {
+    background-color: cadetblue;
+}
+
+.b4 {
+    background-color: coral;
+}
+
+.b5 {
+    background-color: crimson;
+}
+
+.b6 {
+    background-color: forestgreen;
+}
+
+.b7 {
+    background-color: darkorchid;
+}
+
+.b8 {
+    background-color: hotpink;
+}
+
+.b9 {
+    background-color: indigo;
+}
+
+.b10 {
+    background-color: dodgerblue;
 }
 
 .bottom-content {
@@ -126,21 +224,93 @@ p {
     padding-right: 0;
 }
 
-footer {
-    width: 100%;
-    background: black;
-}
+/* ABOUT PAGE SPECIFIC */
 
-footer nav {
-    width: 60%;
+.flex {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
 }
 
-footer nav a {
-    color: white;
-    text-decoration: none;
+
+.about-top {
+    padding: 5%;
+    border-bottom: 1px dashed black;
+}
+
+.tile-container {
+    margin: 5% 0px;
+}
+
+.tiles {
+    padding: 5% 0px;
+    width: 45%;
+    height: 500px;
+    flex-direction: row nowrap;
+}
+
+.tiles h2 {
+    padding-top: 10px;
+}
+
+.tiles p {
+    padding: 5% 0px;
+}
+
+.strategy, .places {
+    flex-flow: column nowrap;
+    padding: 5% 0px;
+    float: left;
+}
+
+.how, .collab {
+    flex-flow: column nowrap;
+    padding: 5% 0px;
+    float: right;
+}
+
+.places, .collab {
+    border-bottom: 1px dashed black;
+    margin-bottom: 5%;
+}
+
+.strategy, .how {
+    border-bottom: 1px dashed black;
+}
+
+.btn {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5% 10%;
+    height: 50px;
+    justify-content: center;
+    align-self: flex-start;
+}
+
+.btn:hover {
+    color:white;
+    background:black;
+}
+
+.bottom-section {
+    margin: 5%;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+
+}
+
+/* STRETCH GOALS */
+
+.box {
+    animation: box-anim 1s linear infinite;
+    animation-play-state: paused;
+}
+
+.box:hover {
+    animation-play-state: running;
+}
+
+@keyframes box-anim{
+    50% {transform: translateY(10px);}
+    100% {transform: translateY(0px);}
+    
 }
