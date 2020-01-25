@@ -52,6 +52,7 @@ table {
 }
 
 /*CODE STARTS HERE*/
+/* STYLES FOR ALL PAGES */
 
 html, body {
     height: 100%;
@@ -91,6 +92,27 @@ header nav a {
     height: auto;
     padding: 10px 0px;
 }
+
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HOME PAGE SPECIFIC */
 
 .container {
     width: 800px;
@@ -202,21 +224,9 @@ header nav a {
     padding-right: 0;
 }
 
-footer {
-    width: 100%;
-    background: black;
-}
+/* ABOUT PAGE SPECIFIC */
 
-footer nav {
-    width: 60%;
+.flex {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
 }
 
-footer nav a {
-    color: white;
-    text-decoration: none;
-}
